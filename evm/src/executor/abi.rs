@@ -46,6 +46,7 @@ ethers::contract::abigen!(
             setNonce(address,uint64)
             getNonce(address)
             chainId(uint256)
+            gasprice(uint256)
     ]"#,
 );
 pub use hevm_mod::{HEVMCalls, HEVM_ABI};

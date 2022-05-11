@@ -70,4 +70,6 @@ interface Cheats {
     function getNonce(address) external returns(uint64);
     // Set block.chainid (newChainId)
     function chainId(uint256) external;
+    // Set tx.gasprice (newGasPrice)
+    function gasprice(uint256) external;
 }

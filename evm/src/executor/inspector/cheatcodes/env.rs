@@ -188,6 +188,10 @@ pub fn apply<DB: Database>(
             data.env.cfg.chain_id = inner.0;
             Ok(Bytes::new())
         }
+        HEVMCalls::Gasprice(inner) => {
+            data.env.tx.gas_price = inner.0;
+            Ok(Bytes::new())
+        }
         _ => return None,
     })
 }
